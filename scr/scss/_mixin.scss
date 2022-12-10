@@ -1,0 +1,32 @@
+@mixin containerCenter {
+    max-width: 1145px;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex: 1 1 1145px;
+
+    // @media (max-width: 1024px) {
+    //     // max-width: pxToRem(900px);
+    // }
+}
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+@mixin columnBetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: auto;
+}
+@mixin rowBetween {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: auto;
+}
+@mixin rowReverseBetween {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    flex: auto;
+}

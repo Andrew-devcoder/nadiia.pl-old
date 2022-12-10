@@ -1,0 +1,20 @@
+.nav {
+    @include flexCenter;
+    height: 102px;
+    background-color: $bg-color-1;
+
+    &__items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+            margin-left: -40px;
+        }
+    }
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24.78px;
+}
