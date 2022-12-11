@@ -254,6 +254,7 @@ h6 {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 23.46px;
+  row-gap: 71.9px;
   padding-top: 60.65px;
   padding-bottom: 98.96px;
   background: #ffffff;
