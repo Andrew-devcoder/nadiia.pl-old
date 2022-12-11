@@ -110,7 +110,7 @@ h6 {
   gap: 28.5px;
 }
 
-.selector-languages {
+.swith-languages {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -119,24 +119,60 @@ h6 {
   font-size: 18px;
   color: white;
 }
+.swith-languages--active {
+  color: #8cba29;
+}
 
 .nav {
   display: flex;
   align-items: center;
   height: 102px;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  font-size: 20px;
   background-color: #fdfdfd;
 }
 .nav__items {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-.nav__items img {
-  margin-left: -40px;
+  justify-content: space-between;
 }
 
 .menu {
   display: flex;
   flex-direction: row;
   gap: 24.78px;
+  align-items: center;
+}
+.menu__logo {
+  margin-left: -40px;
+}
+.menu__section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 33px;
+}
+
+.button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 700;
+}
+.button__log {
+  color: white;
+  background: #5a8fd4;
+  border: 2px solid #5a8fd4;
+}
+.button__register {
+  color: #757978;
+  background: #fdfdfd;
+  border: 2px solid #5a8fd4;
 }
