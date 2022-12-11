@@ -1,5 +1,5 @@
 .screen-first {
-    height: 90vh;
+    // height: 90vh;
     background: #f3f3f3;
 }
 .carousel {
@@ -14,6 +14,7 @@
     font-family: "Nunito Sans";
 
     &__title {
+        white-space: nowrap;
         margin-bottom: 39.33px;
         font-weight: 700;
         font-size: 60px;
@@ -29,6 +30,7 @@
 
     &__content {
         margin-bottom: 37.33px;
+        max-width: 533.75px;
         font-weight: 400;
         font-size: 18px;
         line-height: 24.55px;
@@ -36,7 +38,7 @@
     }
 }
 .first-img {
-    // margin-right: -20px;
+    margin-right: -40px;
 
     img {
         max-width: 100%;

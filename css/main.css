@@ -198,7 +198,6 @@ h6 {
 }
 
 .screen-first {
-  height: 90vh;
   background: #f3f3f3;
 }
 
@@ -214,6 +213,7 @@ h6 {
   font-family: "Nunito Sans";
 }
 .text__title {
+  white-space: nowrap;
   margin-bottom: 39.33px;
   font-weight: 700;
   font-size: 60px;
@@ -227,14 +227,22 @@ h6 {
 }
 .text__content {
   margin-bottom: 37.33px;
+  max-width: 533.75px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.55px;
   color: #757978;
 }
 
+.first-img {
+  margin-right: -40px;
+}
 .first-img img {
   max-width: 100%;
+}
+
+.screen-two {
+  background: #fdfdfd;
 }
 
 .hidden {
@@ -248,8 +256,7 @@ h6 {
   gap: 23.46px;
   padding-top: 60.65px;
   padding-bottom: 98.96px;
-  background: #fdfdfd;
-  height: 90vh;
+  background: #ffffff;
 }
 
 .card {
@@ -272,4 +279,8 @@ h6 {
 .card__img {
   display: block;
   margin: auto;
+}
+
+.screen-three {
+  background: #f7f7f7;
 }
