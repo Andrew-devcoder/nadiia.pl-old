@@ -114,6 +114,9 @@ h6 {
   background: #fdfdfd;
   border: 2px solid #5a8fd4;
 }
+.button__more {
+  border: 2px solid #8cba29;
+}
 .button__more--fill {
   color: #ffffff;
   background: #8cba29;
@@ -284,4 +287,12 @@ h6 {
 
 .screen-three {
   background: #f7f7f7;
+}
+
+.sliders__card {
+  width: 260px;
+  height: 390px;
+  background: #ffffff;
+  box-shadow: -6px 10px 15px rgba(194, 194, 194, 0.4);
+  border-radius: 12px;
 }
