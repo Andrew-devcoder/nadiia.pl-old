@@ -1,0 +1,40 @@
+.screen-first {
+    height: 90vh;
+    background: #f3f3f3;
+}
+.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6.05px;
+}
+
+.text {
+    font-family: Nunito Sans;
+
+    &__title {
+        margin-bottom: 39.33px;
+        font-weight: 700;
+        font-size: 60px;
+        color: #707070;
+    }
+
+    &__subtitle {
+        margin-bottom: 16.21px;
+        font-weight: 700;
+        font-size: 24px;
+        color: #444444;
+    }
+
+    &__content {
+        margin-bottom: 37.33px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24.55px;
+        color: #757978;
+    }
+}
+.first-img {
+    margin-right: -100px;
+}

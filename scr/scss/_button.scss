@@ -20,4 +20,12 @@
         background: #fdfdfd;
         border: 2px solid #5a8fd4;
     }
+
+    &__more {
+        &--fill {
+            color: #ffffff;
+            background: #8cba29;
+            border: 2px solid #8cba29;
+        }
+    }
 }
