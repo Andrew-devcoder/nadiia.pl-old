@@ -11,7 +11,7 @@
 }
 
 .text {
-    font-family: Nunito Sans;
+    font-family: "Nunito Sans";
 
     &__title {
         margin-bottom: 39.33px;
@@ -36,5 +36,9 @@
     }
 }
 .first-img {
-    margin-right: -100px;
+    // margin-right: -20px;
+
+    img {
+        max-width: 100%;
+    }
 }

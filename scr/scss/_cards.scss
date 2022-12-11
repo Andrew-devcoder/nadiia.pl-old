@@ -1,0 +1,36 @@
+.hidden {
+    visibility: hidden;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 23.46px;
+    padding-top: 60.65px;
+    padding-bottom: 98.96px;
+    background: #fdfdfd;
+    height: 90vh;
+}
+.card {
+    width: 356px;
+    height: 304.75px;
+    border-radius: 23px;
+    box-shadow: -10px 14px 18px rgba(194, 194, 194, 0.25);
+    background: #ffffff;
+
+    &__title {
+        margin: 0 auto;
+        padding-top: 20.71px;
+        max-width: 200px;
+        font-family: "Nunito Sans";
+        font-weight: 700;
+        font-size: 24px;
+        color: #545454;
+        text-align: center;
+    }
+
+    &__img {
+        display: block;
+        margin: auto;
+    }
+}

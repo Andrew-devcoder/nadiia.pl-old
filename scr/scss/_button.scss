@@ -5,7 +5,7 @@
 .button {
     padding: 8px 20px;
     border-radius: 10px;
-    font-family: Nunito Sans;
+    font-family: "Nunito Sans";
     font-size: 18px;
     font-weight: 700;
 
@@ -27,5 +27,18 @@
             background: #8cba29;
             border: 2px solid #8cba29;
         }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        order: 999;
+        margin-left: auto;
+        padding-right: 24.87px;
+        font-family: "Nunito Sans";
+        font-weight: 700;
+        font-size: 18px;
+        background: #ffffff;
     }
 }
