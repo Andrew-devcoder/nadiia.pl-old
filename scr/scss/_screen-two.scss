@@ -23,15 +23,36 @@
     box-shadow: -10px 14px 18px rgba(194, 194, 194, 0.25);
     background: #ffffff;
 
+    &__body {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 41.77px;
+
+        &:not(first-child) {
+            gap: 4.32px;
+        }
+    }
+
     &__title {
         margin: 0 auto;
         padding-top: 20.71px;
-        max-width: 200px;
+        max-width: 185px;
+        min-height: 66px;
         font-family: "Nunito Sans";
         font-weight: 700;
         font-size: 24px;
         color: #545454;
         text-align: center;
+    }
+
+    &__subtitle {
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: #303030;
+        margin-bottom: 7.86px;
     }
 
     &__img {

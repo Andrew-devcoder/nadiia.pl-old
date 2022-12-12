@@ -2,7 +2,24 @@
     background: #f7f7f7;
 }
 
+.title {
+    padding: 80px 0 50px;
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+
+    color: #707070;
+}
+
 .sliders {
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     &__card {
         width: 260px;
         height: 390px;
@@ -10,5 +27,43 @@
         background: #ffffff;
         box-shadow: -6px 10px 15px rgba(194, 194, 194, 0.4);
         border-radius: 12px;
+
+        p,
+        h3 {
+            padding-left: 27.21px;
+            padding-right: 19px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 14.68px;
+    }
+
+    &__data {
+        padding-bottom: 9px;
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #707070;
+    }
+
+    &__title {
+        padding-bottom: 12.18px;
+        font-family: "Nunito Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+
+        color: #404040;
+    }
+
+    &__text {
+        font-family: "Barlow";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+
+        color: #707070;
     }
 }
