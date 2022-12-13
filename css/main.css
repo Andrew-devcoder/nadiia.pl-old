@@ -409,3 +409,32 @@ body {
   color: #707070;
   padding-bottom: 41px;
 }
+
+.two__body {
+  display: flex;
+  flex-direction: column;
+}
+.two__title {
+  text-align: center;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  font-size: 48px;
+  color: #707070;
+}
+.two__columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.two__column {
+  max-width: 260px;
+}
+
+.column__title {
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  line-height: 33px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #404040;
+}
