@@ -122,6 +122,7 @@ body {
   display: block;
   margin: 0 auto;
   border: 2px solid #8cba29;
+  background: rgba(0, 0, 0, 0);
 }
 .button__more--fill {
   color: #ffffff;
@@ -188,6 +189,9 @@ body {
 }
 
 .nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   height: 102px;
@@ -195,9 +199,6 @@ body {
   font-weight: 400;
   font-size: 20px;
   background-color: #fdfdfd;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 .nav__items {
   display: flex;
@@ -413,9 +414,11 @@ body {
 .two__body {
   display: flex;
   flex-direction: column;
+  padding: 80px 0;
 }
 .two__title {
   text-align: center;
+  padding-bottom: 52px;
   font-family: "Nunito Sans";
   font-weight: 700;
   font-size: 48px;
@@ -425,9 +428,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 52px;
 }
 .two__column {
   max-width: 260px;
+}
+.two__logo {
+  padding-bottom: 12px;
 }
 
 .column__title {
