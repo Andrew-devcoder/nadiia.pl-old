@@ -1,0 +1,19 @@
+.four {
+    background: #e3e3e3;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-family: "Nunito Sans";
+        font-weight: 700;
+        font-size: 48px;
+
+        color: #707070;
+
+        padding-bottom: 41px;
+    }
+}
