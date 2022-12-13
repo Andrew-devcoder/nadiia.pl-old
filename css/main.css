@@ -180,6 +180,9 @@ body {
   font-size: 18px;
   color: white;
 }
+.swith-languages img {
+  margin-right: 90px;
+}
 .swith-languages--active {
   color: #8cba29;
 }
