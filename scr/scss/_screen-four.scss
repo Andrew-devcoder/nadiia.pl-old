@@ -8,12 +8,15 @@
     }
 
     &__title {
-        font-family: "Nunito Sans";
         font-weight: 700;
-        font-size: 48px;
-
-        color: #707070;
-
+        font-size: $h2-size;
+        line-height: 65px;
+        color: $grey;
         padding-bottom: 41px;
+    }
+
+    &__img {
+        max-width: 500px;
+        max-height: 500px;
     }
 }

@@ -413,11 +413,15 @@ h2 {
   justify-content: space-between;
 }
 .four__title {
-  font-family: "Nunito Sans";
   font-weight: 700;
   font-size: 48px;
+  line-height: 65px;
   color: #707070;
   padding-bottom: 41px;
+}
+.four__img {
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .two__body {
