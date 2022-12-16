@@ -332,24 +332,27 @@ h2 {
 }
 
 .screen-three {
-  background: #f7f7f7;
-  padding-bottom: 64.48px;
+  padding: 80px 0;
+  background: #f3f3f3;
 }
 
 .title {
-  padding: 80px 0 50px;
-  font-family: "Nunito Sans";
-  font-style: normal;
   font-weight: 700;
+  line-height: 82px;
   font-size: 60px;
   text-align: center;
   color: #707070;
 }
 
+.sliders {
+  padding: 59px 0 30px;
+  gap: 26px;
+}
 .sliders__cards {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: row;
+  flex: auto;
 }
 .sliders__card {
   width: 260px;
@@ -369,9 +372,9 @@ h2 {
 .sliders__data {
   padding-bottom: 9px;
   font-family: "Barlow";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
+  line-height: 14px;
   color: #707070;
 }
 .sliders__title {
@@ -391,7 +394,7 @@ h2 {
 }
 .sliders__nav {
   display: flex;
-  margin: 29.94px 0 10.57px;
+  margin: 0 0 10.57px;
   cursor: pointer;
 }
 
