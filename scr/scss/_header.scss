@@ -1,34 +1,30 @@
 .header {
     @include flexCenter;
-    height: 57.18px;
+    height: 50px;
     background-color: $dark-grey;
 
     &__items {
-        display: flex;
-
-        flex-direction: row;
-        justify-content: space-between;
+        @include rowBetween;
     }
 }
 .icons {
     display: flex;
     align-content: center;
-    gap: 28.5px;
+    gap: 30px;
 }
 .swith-languages {
-    display: flex;
+    @include flexCenter;
     flex-direction: row;
-    align-items: center;
-    gap: 16.93px;
+    gap: 30px;
     font-family: Open Sans;
-    font-size: 18px;
-    color: white;
+    font-size: $text-size;
+    color: $white;
 
     img {
         margin-right: 90px;
     }
 
     &--active {
-        color: #8cba29;
+        color: $green;
     }
 }

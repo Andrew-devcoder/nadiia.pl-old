@@ -4,31 +4,36 @@
     top: 0;
     @include flexCenter;
     height: 102px;
-    font-family: Nunito Sans;
     font-weight: 400;
     font-size: 20px;
     background-color: $white;
 
-    &__items {
-        display: flex;
+    &__body {
+        @include flexCenter;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
     }
 }
 .menu {
-    display: flex;
+    @include flexCenter;
     flex-direction: row;
     gap: 24.78px;
-    align-items: center;
+    color: $dark-grey;
 
-    &__logo {
-        margin-left: -40px;
+    &__items {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 20px;
     }
 
     &__section {
-        display: flex;
+        @include flexCenter;
         flex-direction: row;
         gap: 10px;
     }
+}
+.exit {
+    display: flex;
+    gap: 32px;
 }
