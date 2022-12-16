@@ -1,38 +1,10 @@
 .button {
-    &__card {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        order: 999;
-        margin-left: auto;
-        padding-right: 24.87px;
-        font-family: "Nunito Sans";
-        font-weight: 700;
-        font-size: 18px;
-        background: #ffffff;
-
-        &--small {
-            display: flex;
-            align-items: center;
-            font-family: "Nunito Sans";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            background: #ffffff;
-
-            img {
-                padding: 0 10px;
-            }
-        }
-    }
-}
-
-.button {
     padding: 10px 20px;
     border-radius: 10px;
     font-size: $text-size;
     font-weight: 700;
     line-height: 25px;
+    color: $dark-grey;
 
     &__fill {
         display: inline-block;
@@ -45,5 +17,21 @@
         display: inline-block;
         border: 2px solid $green;
         background: rgba(0, 0, 0, 0);
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding-right: 50px;
+        font-weight: 700;
+        font-size: $text-size;
+        background: rgba(0, 0, 0, 0);
+        color: $dark-grey;
+
+        &--margin-left {
+            margin: 0;
+            margin-left: 41px;
+        }
     }
 }
