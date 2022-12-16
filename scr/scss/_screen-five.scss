@@ -1,4 +1,6 @@
-.two {
+.screen-five {
+    padding: 80px 0 0;
+
     &__body {
         display: flex;
         flex-direction: column;
@@ -8,19 +10,16 @@
 
     &__title {
         text-align: center;
-        padding-bottom: 52px;
-        font-family: "Nunito Sans";
         font-weight: 700;
-        font-size: 48px;
-
-        color: #707070;
+        font-size: $h2-size;
+        color: $grey;
     }
 
-    &__columns {
+    &__row {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-bottom: 52px;
+        padding: 50px 0;
     }
 
     &__column {
@@ -30,16 +29,18 @@
     &__logo {
         padding-bottom: 12px;
     }
-}
 
-.column {
-    &__title {
-        font-family: "Nunito Sans";
+    &__text {
         font-weight: 700;
         line-height: 33px;
-        font-size: 24px;
+        font-size: $title-size;
         text-transform: uppercase;
+        color: $dark-grey;
+    }
 
-        color: #404040;
+    &__button {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 80px;
     }
 }

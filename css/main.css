@@ -424,38 +424,42 @@ h2 {
   max-height: 500px;
 }
 
-.two__body {
+.screen-five {
+  padding: 80px 0 0;
+}
+.screen-five__body {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 0;
 }
-.two__title {
+.screen-five__title {
   text-align: center;
-  padding-bottom: 52px;
-  font-family: "Nunito Sans";
   font-weight: 700;
   font-size: 48px;
   color: #707070;
 }
-.two__columns {
+.screen-five__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 52px;
+  padding: 50px 0;
 }
-.two__column {
+.screen-five__column {
   max-width: 260px;
 }
-.two__logo {
+.screen-five__logo {
   padding-bottom: 12px;
 }
-
-.column__title {
-  font-family: "Nunito Sans";
+.screen-five__text {
   font-weight: 700;
   line-height: 33px;
   font-size: 24px;
   text-transform: uppercase;
   color: #404040;
+}
+.screen-five__button {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 80px;
 }
