@@ -1,52 +1,52 @@
 .screen-first {
-    // height: 90vh;
-    background: #f3f3f3;
+    padding: 36px 0 74px;
+    background: $light-grey;
 }
 .carousel {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include rowBetween;
     align-items: center;
+    margin-bottom: 57px;
 }
 
 .text {
-    font-family: "Nunito Sans";
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-items: flex-start;
 
     &__title {
+        position: absolute;
+        top: 300px;
+        z-index: 0;
         white-space: nowrap;
-        margin-bottom: 39.33px;
         font-weight: 700;
-        font-size: 60px;
-        color: #707070;
+        line-height: 100%;
+        color: $grey;
     }
 
     &__subtitle {
-        margin-bottom: 16.21px;
+        margin: 22px 0 17px;
         font-weight: 700;
-        font-size: 24px;
-        color: #444444;
+        font-size: $title-size;
+        line-height: 33px;
+        color: $dark-grey;
     }
 
     &__content {
-        margin-bottom: 37.33px;
-        max-width: 533.75px;
+        margin-bottom: 40px;
+        max-width: 530px;
         font-weight: 400;
         font-size: 18px;
-        line-height: 24.55px;
-        color: #757978;
+        line-height: 25px;
+        color: $grey;
     }
 }
 .first-img {
-    margin-right: -40px;
-
-    img {
-        max-width: 100%;
-    }
+    max-width: 100%;
 }
 
 .scroll-carousel {
     display: block;
     margin: 0 auto;
     width: 579px;
-    padding-bottom: 55.76px;
 }

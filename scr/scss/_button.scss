@@ -1,34 +1,4 @@
 .button {
-    padding: 8px 20px;
-    border-radius: 10px;
-    font-family: "Nunito Sans";
-    font-size: 18px;
-    font-weight: 700;
-
-    // &__log {
-    //     color: white;
-    //     background: #5a8fd4;
-    //     border: 2px solid #5a8fd4;
-    // }
-
-    // &__register {
-    //     color: #757978;
-    //     background: #fdfdfd;
-    //     border: 2px solid #5a8fd4;
-    // }
-
-    // &__more {
-    //     display: inline-block;
-    //     margin: 0 auto;
-    //     border: 2px solid #8cba29;
-    //     background: rgba(0, 0, 0, 0);
-
-    //     &--fill {
-    //         color: #ffffff;
-    //         background: #8cba29;
-    //         border: 2px solid #8cba29;
-    //     }
-
     &__card {
         display: flex;
         align-items: center;
@@ -58,14 +28,14 @@
 }
 
 .button {
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-size: $text-size;
     font-weight: 700;
+    line-height: 25px;
 
     &__fill {
         display: inline-block;
-        margin: 0 auto;
         color: $white;
         border: 2px solid $green;
         background: $green;
@@ -73,7 +43,6 @@
 
     &__border {
         display: inline-block;
-        margin: 0 auto;
         border: 2px solid $green;
         background: rgba(0, 0, 0, 0);
     }
