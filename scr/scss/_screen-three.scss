@@ -1,42 +1,47 @@
-.screen-three {
+.sliders {
     padding: 80px 0;
     background: $light-grey;
-}
 
-.title {
-    font-weight: 700;
-    line-height: 82px;
-    font-size: $h1-size;
-    text-align: center;
+    &__title {
+        font-weight: 700;
+        line-height: 82px;
+        font-size: $h1-size;
+        text-align: center;
+        color: $grey;
+    }
 
-    color: $grey;
-}
-
-.sliders {
-    padding: 59px 0 30px;
-    gap: 26px;
-
-    &__cards {
+    &__row {
+        padding: 59px 0 30px;
         @include rowBetween;
+        gap: 26px;
     }
 
-    &__card {
-        width: 260px;
-        height: 390px;
-
-        background: #ffffff;
-        box-shadow: -6px 10px 15px rgba(194, 194, 194, 0.4);
-        border-radius: 12px;
-
-        p,
-        h3 {
-            padding-left: 27.21px;
-            padding-right: 19px;
-        }
+    &__arrows {
+        display: flex;
+        justify-content: flex-end;
+        gap: 23px;
+        margin: 0 20px 39px;
+        cursor: pointer;
     }
 
-    &__img {
-        margin-bottom: 14.68px;
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.slide {
+    width: 260px;
+    height: 390px;
+
+    background: #ffffff;
+    box-shadow: -6px 10px 15px rgba(194, 194, 194, 0.4);
+    border-radius: 12px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 14.68px 11.79px 0 28.21px;
     }
 
     &__data {
@@ -65,13 +70,5 @@
         font-size: 18px;
 
         color: #707070;
-    }
-
-    &__nav {
-        display: flex;
-
-        margin: 0 0 10.57px;
-
-        cursor: pointer;
     }
 }
