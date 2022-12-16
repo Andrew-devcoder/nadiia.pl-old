@@ -87,13 +87,26 @@ h6 {
 
 body {
   overflow-x: hidden;
+  font-family: "Nunito Sans";
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 .container {
-  max-width: 1145px;
+  max-width: 1146px;
   margin: 0 auto;
   padding: 0 15px;
-  flex: 1 1 1145px;
+  flex: 1 1 1146px;
 }
 
 .buttons {
@@ -107,27 +120,6 @@ body {
   font-family: "Nunito Sans";
   font-size: 18px;
   font-weight: 700;
-}
-.button__log {
-  color: white;
-  background: #5a8fd4;
-  border: 2px solid #5a8fd4;
-}
-.button__register {
-  color: #757978;
-  background: #fdfdfd;
-  border: 2px solid #5a8fd4;
-}
-.button__more {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #8cba29;
-  background: rgba(0, 0, 0, 0);
-}
-.button__more--fill {
-  color: #ffffff;
-  background: #8cba29;
-  border: 2px solid #8cba29;
 }
 .button__card {
   display: flex;
@@ -152,6 +144,26 @@ body {
 }
 .button__card--small img {
   padding: 0 10px;
+}
+
+.button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.button__fill {
+  display: inline-block;
+  margin: 0 auto;
+  color: #fdfdfd;
+  border: 2px solid #96be1e;
+  background: #96be1e;
+}
+.button__border {
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid #96be1e;
+  background: rgba(0, 0, 0, 0);
 }
 
 .header {

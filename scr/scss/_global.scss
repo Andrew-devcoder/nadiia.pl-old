@@ -1,5 +1,15 @@
 body {
     overflow-x: hidden;
+    font-family: $font-family;
+}
+h1 {
+    font-size: $h1-size;
+}
+h2 {
+    font-size: $h2-size;
+}
+h2 {
+    font-size: $h3-size;
 }
 .container {
     @include containerCenter;
