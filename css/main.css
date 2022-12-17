@@ -472,6 +472,73 @@ footer {
   padding: 80px 0;
   background: #404040;
 }
+.footer__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .footer__item {
   display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__item img {
+  max-width: 190px;
+}
+.footer__text {
+  max-width: 258px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #fdfdfd;
+}
+.footer__icons {
+  display: flex;
+  gap: 28px;
+}
+.footer__languages {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+.footer__languages p {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
+.footer__sections {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.section__title {
+  padding-bottom: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.section__subtitle {
+  padding-bottom: 1px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #707070;
+}
+.section__subtitle--margin {
+  margin-top: 8px;
+}
+.section p {
+  padding-bottom: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.section p:not(last-child) {
+  padding-bottom: 2px;
 }

@@ -3,8 +3,85 @@
     background: $dark-grey;
 
     &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     &__item {
         display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        img {
+            max-width: 190px;
+        }
+    }
+
+    &__text {
+        max-width: 258px;
+        font-weight: 400;
+        font-size: $text-size;
+        line-height: 25px;
+        color: $white;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 28px;
+    }
+
+    &__languages {
+        display: flex;
+        flex-direction: row;
+        gap: 17px;
+
+        p {
+            font-family: "Open Sans";
+            font-weight: 700;
+            font-size: $text-size;
+            line-height: 25px;
+        }
+    }
+
+    &__sections {
+        display: flex;
+        flex-direction: row;
+        gap: 26px;
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        padding-bottom: 1px;
+        font-weight: 400;
+        font-size: $text-size;
+        line-height: 25px;
+    }
+
+    &__subtitle {
+        padding-bottom: 1px;
+        font-weight: 700;
+        font-size: $title-size;
+        line-height: 33px;
+
+        color: $grey;
+
+        &--margin {
+            margin-top: 8px;
+        }
+    }
+
+    p {
+        padding-bottom: 2px;
+        font-weight: 400;
+        font-size: $text-size;
+        line-height: 25px;
+    }
+
+    p:not(last-child) {
+        padding-bottom: 2px;
     }
 }
