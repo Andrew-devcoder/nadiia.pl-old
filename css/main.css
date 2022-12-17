@@ -132,6 +132,10 @@ footer {
   border: 2px solid #96be1e;
   background: rgba(0, 0, 0, 0);
 }
+.button__border--grey {
+  color: #707070;
+  border: 2px solid #707070;
+}
 .button__card {
   display: flex;
   align-items: center;
@@ -496,6 +500,11 @@ footer {
 .footer__row--center {
   justify-content: center;
 }
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer__item {
   display: flex;
   flex-direction: column;
@@ -550,6 +559,23 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+.footer__lists {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+.footer__lists ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 310px;
+  padding: 5px 10px;
+  border: 1px solid #707070;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
 }
 .footer__policy {
   display: flex;

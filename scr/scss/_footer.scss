@@ -17,6 +17,13 @@
             justify-content: center;
         }
     }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
@@ -81,6 +88,25 @@
         display: flex;
         justify-content: center;
         margin-top: 20px;
+    }
+
+    &__lists {
+        display: flex;
+        flex-direction: row;
+        gap: 90px;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 310px;
+            padding: 5px 10px;
+            border: 1px solid $grey;
+            font-weight: 400;
+            font-size: $text-size;
+            line-height: 25px;
+        }
     }
 
     &__policy {

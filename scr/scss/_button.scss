@@ -17,6 +17,11 @@
         display: inline-block;
         border: 2px solid $green;
         background: rgba(0, 0, 0, 0);
+
+        &--grey {
+            color: $grey;
+            border: 2px solid $grey;
+        }
     }
 
     &__card {
