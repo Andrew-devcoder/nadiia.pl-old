@@ -39,4 +39,16 @@
         padding: 0;
         background: rgba(0, 0, 0, 0);
     }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 0;
+        font-weight: 400;
+        font-size: $text-size;
+        line-height: 25px;
+        color: $white;
+        background: rgba(0, 0, 0, 0);
+    }
 }
