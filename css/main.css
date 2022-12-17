@@ -493,6 +493,9 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+.footer__row--center {
+  justify-content: center;
+}
 .footer__item {
   display: flex;
   flex-direction: column;
@@ -547,6 +550,11 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+.footer__policy {
+  display: flex;
+  flex-direction: row;
+  gap: 78px;
 }
 
 .section {
