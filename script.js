@@ -5,6 +5,7 @@ new Swiper('.swiper-container', {
     },
     scrollbar: {
         el: '.swiper-scrollbar',
-        draggable: true
+        draggable: true,
     },
+    touchRatio: 2,
 });
