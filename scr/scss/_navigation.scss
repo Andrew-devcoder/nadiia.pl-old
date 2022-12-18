@@ -15,26 +15,106 @@
         justify-content: space-between;
     }
 }
+
 .menu {
     @include flexCenter;
     flex-direction: row;
-    gap: 24.78px;
+    // gap: 24.78px;
+
     color: $dark-grey;
 
     &__items {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        // gap: 20px;
         font-size: 20px;
     }
 
     &__section {
-        @include flexCenter;
+        display: flex;
+        li {
+            position: relative;
+        }
+    }
+
+    &__link {
+        display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 10px;
+        padding: 0 10px;
+        color: $dark-grey;
+
+        &:hover {
+            img {
+                transform: rotate(180deg);
+                padding-right: 0;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    img {
+        padding-right: 10px;
     }
 }
+
+.sub-menu {
+    &__section {
+        display: none;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        min-width: max-content;
+        padding: 30px 0 0;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        color: $dark-grey;
+        background: $white;
+    }
+}
+
+.sub-sub-menu {
+    &__section {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: max-content;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        color: $dark-grey;
+        background: $white;
+    }
+}
+
 .exit {
     display: flex;
     gap: 32px;
 }
+
+.menu__section > li:hover .sub-menu__section {
+    display: block;
+}
+
+.sub-menu__section > li:hover .sub-sub-menu__section {
+    display: block;
+}
+
+// .menu__link:hover {
+//     img {
+//         transform: rotate(180deg);
+//     }
+// }
