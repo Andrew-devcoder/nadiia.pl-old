@@ -245,12 +245,15 @@ footer {
   padding: 0 10px;
   color: #404040;
 }
-.menu__link:hover img {
-  transform: rotate(180deg);
-  padding-right: 0;
-  padding-left: 10px;
+.menu__link img {
+  padding: 0;
+  transform: rotate(270deg);
 }
-.menu img {
+.menu__link:hover img {
+  transform: rotate(0deg);
+  padding: 0;
+}
+.menu > img {
   padding-right: 10px;
 }
 
