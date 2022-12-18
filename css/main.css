@@ -372,11 +372,16 @@ footer {
 
 .swiper-horizontal > .swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
+  margin: 0 auto;
   left: 20%;
   bottom: 80px;
   max-width: 60%;
-  margin: 0 auto;
   width: 100%;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #707070;
+  cursor: pointer;
 }
 
 .screen-two {
