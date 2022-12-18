@@ -314,6 +314,7 @@ footer {
 }
 
 .screen-first {
+  position: relative;
   padding: 36px 0 74px;
   background: #f3f3f3;
 }
@@ -325,6 +326,7 @@ footer {
   flex: auto;
   align-items: center;
   margin-bottom: 57px;
+  min-width: 0;
 }
 
 .text {
@@ -335,7 +337,7 @@ footer {
 }
 .text__title {
   position: absolute;
-  top: 300px;
+  top: 148px;
   z-index: 0;
   white-space: nowrap;
   font-weight: 700;
@@ -343,7 +345,7 @@ footer {
   color: #707070;
 }
 .text__subtitle {
-  margin: 55px 0 17px;
+  margin: 120px 0 17px;
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
@@ -366,6 +368,15 @@ footer {
   display: block;
   margin: 0 auto;
   width: 579px;
+}
+
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  left: 20%;
+  bottom: 80px;
+  max-width: 60%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .screen-two {
