@@ -77,6 +77,13 @@
         padding: 10px;
         color: $dark-grey;
         background: $white;
+
+        &:hover {
+            img {
+                transform: rotate(270deg);
+                padding-right: 0;
+            }
+        }
     }
 }
 
@@ -112,9 +119,3 @@
 .sub-menu__section > li:hover .sub-sub-menu__section {
     display: block;
 }
-
-// .menu__link:hover {
-//     img {
-//         transform: rotate(180deg);
-//     }
-// }

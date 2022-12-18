@@ -273,6 +273,10 @@ footer {
   color: #404040;
   background: #fdfdfd;
 }
+.sub-menu__link:hover img {
+  transform: rotate(270deg);
+  padding-right: 0;
+}
 
 .sub-sub-menu__section {
   display: none;
