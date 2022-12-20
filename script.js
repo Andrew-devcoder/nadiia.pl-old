@@ -49,12 +49,12 @@ var two = new Swiper('.swiper-two', {
     slidesPerView: 4,
     watchOverflow: true,
     grabCursor: true,
-    spaceBetween: 0,
-    autoplay: {
-        delay: 1000,
-        stopOnLastSlide: true,
-        disableOnInteraction: false,
-    },
-    loop: true,
+    spaceBetween: 30,
+    // autoplay: {
+    //     delay: 1000,
+    //     stopOnLastSlide: true,
+    //     disableOnInteraction: false,
+    // },
+    // loop: true,
     speed: 3000,
 });

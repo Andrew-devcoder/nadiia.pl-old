@@ -10,11 +10,11 @@
         color: $grey;
     }
 
-    &__row {
-        padding: 59px 0 30px;
-        @include rowBetween;
-        gap: 26px;
-    }
+    // &__row {
+    //     padding: 59px 0 30px;
+    //     @include rowBetween;
+    //     gap: 26px;
+    // }
 
     &__arrows {
         display: flex;
