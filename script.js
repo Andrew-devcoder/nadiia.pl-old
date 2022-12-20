@@ -1,8 +1,8 @@
-new Swiper('.swiper-container', {
-    navigator: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+var first = new Swiper('.swiper-one', {
+    // navigator: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
     scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
@@ -11,7 +11,7 @@ new Swiper('.swiper-container', {
     grabCursor: true,
     slidesPerView: 1,
     watchOverflow: true,
-    spaceBetween: 120,
+    spaceBetween: 200,
     autoplay: {
         delay: 1000,
         stopOnLastSlide: true,
@@ -38,4 +38,23 @@ new Swiper('.swiper-container', {
     // },
 
 
+});
+
+var two = new Swiper('.swiper-two', {
+    navigator: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    slidesPerView: 4,
+    watchOverflow: true,
+    grabCursor: true,
+    spaceBetween: 0,
+    autoplay: {
+        delay: 1000,
+        stopOnLastSlide: true,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    speed: 3000,
 });

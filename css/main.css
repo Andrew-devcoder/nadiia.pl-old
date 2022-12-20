@@ -507,6 +507,10 @@ footer {
   justify-content: flex-end;
 }
 
+.swiper-wrapper {
+  padding: 59px 0 30px;
+}
+
 .four {
   background: #e3e3e3;
 }
