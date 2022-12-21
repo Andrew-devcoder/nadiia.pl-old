@@ -54,8 +54,8 @@ var first = new Swiper('.swiper-one', {
 
 var two = new Swiper('.swiper-two', {
     navigation: {
-        nextEl: '.swiper-two .swiper-button-next',
-        prevEl: '.swiper-two .swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 
     slidesPerView: 4,
