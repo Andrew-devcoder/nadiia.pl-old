@@ -17,6 +17,9 @@
     // }
 
     &__arrows {
+        position: absolute;
+        top: 20px;
+        left: auto;
         display: flex;
         justify-content: flex-end;
         gap: 23px;
@@ -82,4 +85,8 @@
 
 .swiper-wrapper {
     padding: 59px 0 30px;
+}
+
+.swiper-two {
+    position: relative;
 }

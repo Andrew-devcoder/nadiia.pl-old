@@ -450,6 +450,9 @@ footer {
   color: #707070;
 }
 .sliders__arrows {
+  position: absolute;
+  top: 20px;
+  left: auto;
   display: flex;
   justify-content: flex-end;
   gap: 23px;
@@ -504,6 +507,10 @@ footer {
 
 .swiper-wrapper {
   padding: 59px 0 30px;
+}
+
+.swiper-two {
+  position: relative;
 }
 
 .four {
