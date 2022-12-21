@@ -12,12 +12,12 @@ var first = new Swiper('.swiper-one', {
     slidesPerView: 1,
     watchOverflow: true,
     spaceBetween: 200,
-    autoplay: {
-        delay: 1000,
-        stopOnLastSlide: true,
-        disableOnInteraction: false,
-    },
-    speed: 3000,
+    // autoplay: {
+    //     delay: 1000,
+    //     stopOnLastSlide: true,
+    //     disableOnInteraction: false,
+    // },
+    // speed: 3000,
     // freeMode: true, // можно скроллить как ленту без фиксации на блоке 
     loop: true, // бесконечное прокручивание
     // initialSlide: 1, //дефолт второй слайд ( по индексу первый )
@@ -37,6 +37,18 @@ var first = new Swiper('.swiper-one', {
     //     limitRotation: true,
     // },
 
+    // effect: 'coverflow',
+    // coverflowEffect: {
+    //     rotate: 20,
+    //     stretch: 50,
+    //     slideShadow: true,
+
+    // },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+    },
 
 });
 
@@ -57,4 +69,5 @@ var two = new Swiper('.swiper-two', {
     // },
     // loop: true,
     speed: 3000,
+    nested: true,
 });
