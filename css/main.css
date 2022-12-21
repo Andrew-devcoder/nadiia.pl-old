@@ -456,6 +456,9 @@ footer {
   margin: 0 20px 39px;
   cursor: pointer;
 }
+.sliders__arrows--rotate {
+  transform: rotate(180deg);
+}
 .sliders__button {
   display: flex;
   justify-content: center;
