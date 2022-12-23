@@ -185,6 +185,10 @@ footer {
   gap: 30px;
 }
 
+.language {
+  color: #fdfdfd;
+}
+
 .swith-languages {
   display: flex;
   align-items: center;

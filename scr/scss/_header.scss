@@ -12,6 +12,11 @@
     align-content: center;
     gap: 30px;
 }
+
+.language {
+    color: $white;
+}
+
 .swith-languages {
     @include flexCenter;
     flex-direction: row;
