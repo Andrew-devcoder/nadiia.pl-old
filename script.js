@@ -75,11 +75,11 @@ var two = new Swiper('.swiper-two', {
 
 //change items class active
 
-conts listLanguages = documen.querySelector('.switch-languages');
+conts listLanguages = documen.querySelector('.swith-languages');
 listLanguages.onclick = function(e) {
 for (let i = 0; i<listLanguages.children.lenght; i++){
-listLanguages.children[1].classList.remove('switch-language--acrive');
-e.target.classList.add('swtch-language--active');
+listLanguages.children[1].classList.remove('swith-language--acrive');
+e.target.classList.add('swith-language--active');
 };
 
 
