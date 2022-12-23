@@ -95,3 +95,33 @@ list.forEach(item => {
         item.classList.add('swith-languages--active')
     })
 })
+
+
+
+// $(document).ready(function () {
+//     $(".button__footer").click(function () {
+//         $(".hidden").slideToggle();
+//     });
+// });
+
+// let allCity = document.querySelector('.hidden');
+// document.querySelector('.button__footer').addEventListener('click', (e) => {
+//     allCity.display = getComputedStyle(allCity).display == 'block' ? 'none' : 'block';
+// });
+
+
+let buttonAllCity = document.querySelector('.button__footer');
+let allCity = document.querySelector('div .hidden');
+console.log(allCity);
+
+buttonAllCity.addEventListener('click', function (e) {
+    e.preventDefault();
+    allCity.classList.toggle('hidden');
+});
+
+// allCity.forEach(item => {
+//     item.addEventListener('clock', (e) => {
+//         allCity.forEach(el => { el.classList.remove('hidden'); });
+//         item.classList / add('hidden');
+//     });
+// });
