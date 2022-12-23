@@ -11,13 +11,13 @@ var first = new Swiper('.swiper-one', {
     grabCursor: true,
     slidesPerView: 1,
     watchOverflow: true,
-    spaceBetween: 200,
+    spaceBetween: 1000,
     autoplay: {
         delay: 1000,
         stopOnLastSlide: true,
         disableOnInteraction: false,
     },
-    speed: 3000,
+    speed: 4000,
     freeMode: true, // можно скроллить как ленту без фиксации на блоке 
     loop: true, // бесконечное прокручивание
     // initialSlide: 1, //дефолт второй слайд ( по индексу первый )

@@ -451,13 +451,11 @@ footer {
 }
 .sliders__arrows {
   position: absolute;
-  top: 20px;
-  left: auto;
-  display: flex;
-  justify-content: flex-end;
-  gap: 23px;
-  margin: 0 20px 39px;
+  top: 551px;
+  margin: auto;
+  margin-left: 920px;
   cursor: pointer;
+  min-width: 100px;
 }
 .sliders__arrows--rotate {
   transform: rotate(180deg);
@@ -465,6 +463,7 @@ footer {
 .sliders__button {
   display: flex;
   justify-content: center;
+  margin-top: 64.94px;
 }
 
 .slide {
