@@ -73,15 +73,25 @@ var two = new Swiper('.swiper-two', {
 });
 
 
-//change items class active
 
-const listLanguages = document.querySelector('.swith-languages');
-console.log('listLanguages');
+//click add classs 
 
-listLanguages.onclick = function (e) {
-    for (let i = 0; i < listLanguages.children.lenght; i++) {
-        listLanguages.children[1].classList.remove('swith-languages--active');
-    };
-    e.target.classList.add('swith-languages--active');
-};
+// const listLanguages = document.querySelector('.swith-languages');
+// console.log(listLanguages);
 
+// listLanguages.onclick = function (e) {
+//     for (let i = 0; i < listLanguages.children.lenght; i++) {
+//         listLanguages.children[1].classList.remove('swith-languages--active');
+//     };
+//     e.target.classList.add('swith-languages--active');
+// };
+
+
+
+const list = document.querySelectorAll('.swith-languages a')
+list.forEach(item => {
+    item.addEventListener('click', (e) => {
+        list.forEach(el => { el.classList.remove('swith-languages--active'); });
+        item.classList.add('swith-languages--active')
+    })
+})
