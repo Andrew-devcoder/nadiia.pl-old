@@ -165,6 +165,9 @@ footer {
   color: #fdfdfd;
   background: rgba(0, 0, 0, 0);
 }
+.button__footer--rotate img {
+  transform: rotate(180deg);
+}
 
 .header {
   display: flex;

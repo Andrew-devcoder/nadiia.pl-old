@@ -55,5 +55,11 @@
         line-height: 25px;
         color: $white;
         background: rgba(0, 0, 0, 0);
+
+        &--rotate {
+            img {
+                transform: rotate(180deg);
+            }
+        }
     }
 }

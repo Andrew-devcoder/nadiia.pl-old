@@ -116,5 +116,6 @@ let allCity = document.querySelector('div .hidden');
 buttonAllCity.addEventListener('click', function (e) {
     e.preventDefault();
     allCity.classList.toggle('hidden');
+    buttonAllCity.classList.toggle('button__footer--rotate');
 });
 
