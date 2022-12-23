@@ -69,14 +69,16 @@
     &__city {
         display: flex;
         flex-direction: column;
+        width: 100%;
 
         &--row {
             display: flex;
             flex-direction: row;
-            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: space-between;
 
             p {
-                padding-right: 132px;
+                width: 16.667%;
                 font-weight: 400;
                 font-size: $text-size;
                 line-height: 25px;

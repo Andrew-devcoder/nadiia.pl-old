@@ -112,16 +112,9 @@ list.forEach(item => {
 
 let buttonAllCity = document.querySelector('.button__footer');
 let allCity = document.querySelector('div .hidden');
-console.log(allCity);
 
 buttonAllCity.addEventListener('click', function (e) {
     e.preventDefault();
     allCity.classList.toggle('hidden');
 });
 
-// allCity.forEach(item => {
-//     item.addEventListener('clock', (e) => {
-//         allCity.forEach(el => { el.classList.remove('hidden'); });
-//         item.classList / add('hidden');
-//     });
-// });
