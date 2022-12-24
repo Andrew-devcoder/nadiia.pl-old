@@ -192,7 +192,7 @@ footer {
   color: #fdfdfd;
 }
 
-.swith-languages {
+.switch-language {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -201,10 +201,10 @@ footer {
   font-size: 18px;
   color: #fdfdfd;
 }
-.swith-languages img {
+.switch-language img {
   margin-right: 90px;
 }
-.swith-languages--active {
+.switch-language--active {
   color: #96be1e;
 }
 

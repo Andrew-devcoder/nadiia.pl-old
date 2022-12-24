@@ -76,23 +76,23 @@ var two = new Swiper('.swiper-two', {
 
 //click add classs 
 
-// const listLanguages = document.querySelector('.swith-languages');
+// const listLanguages = document.querySelector('.switch-language');
 // console.log(listLanguages);
 
 // listLanguages.onclick = function (e) {
 //     for (let i = 0; i < listLanguages.children.lenght; i++) {
-//         listLanguages.children[1].classList.remove('swith-languages--active');
+//         listLanguages.children[1].classList.remove('switch-language--active');
 //     };
-//     e.target.classList.add('swith-languages--active');
+//     e.target.classList.add('switch-language--active');
 // };
 
 
 
-const list = document.querySelectorAll('.swith-languages a')
+const list = document.querySelectorAll('.switch-language a')
 list.forEach(item => {
     item.addEventListener('click', (e) => {
-        list.forEach(el => { el.classList.remove('swith-languages--active'); });
-        item.classList.add('swith-languages--active')
+        list.forEach(el => { el.classList.remove('switch-language--active'); });
+        item.classList.add('switch-language--active')
     })
 })
 
