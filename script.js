@@ -130,34 +130,89 @@ buttonAllCity.addEventListener('click', function (e) {
 //     })
 // });
 
-let dropButton = document.querySelector('.dropdown__button');
-let dropList = document.querySelector('.dropdown__list');
-let allDropItems = document.querySelectorAll('.dropdown__list--item');
-let inputDropdown = document.querySelector('.dropdown__input--hidden');
+// all buttons for dropdown list
+let allButton = document.querySelectorAll('.dropdown__container');
+
+allButton.forEach(function (dropWrapper) {
+    let dropButton = dropWrapper.querySelector('.dropdown__button');
+    let dropList = dropWrapper.querySelector('.dropdown__list');
+    let allDropItems = dropList.querySelectorAll('.dropdown__list--item');
+    let inputDropdown = dropWrapper.querySelector('.dropdown__input--hidden');
 
 
-// click button : open/close dropdown list
-dropButton.addEventListener('click', function (e) {
-    dropList.classList.toggle('dropdown__list--visible');
-    this.classList.add('dropdown__button--active');
-});
-
-// list : choose item 
-allDropItems.forEach(function (listItem) {
-    listItem.addEventListener('click', function (e) {
-        e.stopPropagation(); // click not count by list items 
-        dropButton.innerText = this.innerText;
-        dropButton.focus();
-        inputDropdown.value = this.dataset.value;
-        dropList.classList.remove('dropdown__list--visible');
+    // click button : open/close dropdown list
+    dropButton.addEventListener('click', function (e) {
+        dropList.classList.toggle('dropdown__list--visible');
+        this.classList.add('dropdown__button--active');
     });
+
+    // list : choose item 
+    allDropItems.forEach(function (listItem) {
+        listItem.addEventListener('click', function (e) {
+            e.stopPropagation(); // click not count by list items 
+            dropButton.innerText = this.innerText;
+            dropButton.focus();
+            inputDropdown.value = this.dataset.value;
+            dropList.classList.remove('dropdown__list--visible');
+        });
+    });
+
+    // click outside the droplist
+    document.addEventListener('click', function (e) {
+        if (e.target !== dropButton) {
+            dropButton.classList.remove('dropdown__button--active');
+            dropList.classList.remove('dropdown__list--visible');
+        };
+    });
+
+
+    // click tab or esc
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Tab' || e.key === 'Escape') {
+            dropButton.classList.remove('dropdown__button--active');
+            dropList.classList.remove('dropdown__list--visible');
+        }
+    });
+
 });
 
-// click outside the droplist
-document.addEventListener('click', function (e) {
-    if (e.target !== dropButton) {
+// let dropButton = document.querySelector('.dropdown__button');
+// let dropList = document.querySelector('.dropdown__list');
+// let allDropItems = document.querySelectorAll('.dropdown__list--item');
+// let inputDropdown = document.querySelector('.dropdown__input--hidden');
+
+
+// // click button : open/close dropdown list
+// dropButton.addEventListener('click', function (e) {
+//     dropList.classList.toggle('dropdown__list--visible');
+//     this.classList.add('dropdown__button--active');
+// });
+
+// // list : choose item 
+// allDropItems.forEach(function (listItem) {
+//     listItem.addEventListener('click', function (e) {
+//         e.stopPropagation(); // click not count by list items 
+//         dropButton.innerText = this.innerText;
+//         dropButton.focus();
+//         inputDropdown.value = this.dataset.value;
+//         dropList.classList.remove('dropdown__list--visible');
+//     });
+// });
+
+// // click outside the droplist
+// document.addEventListener('click', function (e) {
+//     if (e.target !== dropButton) {
+//         dropButton.classList.remove('dropdown__button--active');
+//         dropList.classList.remove('dropdown__list--visible');
+//     };
+// });
+
+
+// click tab or esc
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Tab' || e.key === 'Escape') {
         dropButton.classList.remove('dropdown__button--active');
         dropList.classList.remove('dropdown__list--visible');
-    };
+    }
 });
 
