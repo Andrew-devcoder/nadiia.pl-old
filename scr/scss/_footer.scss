@@ -163,8 +163,8 @@
 .select-css {
     margin: 0;
     padding: 5px 8px;
-    width: 100%;
-    max-width: 100%;
+    // width: 100%;
+    // max-width: 100%;
     font-family: $font-family;
     font-size: $text-size;
     font-weight: 400;
@@ -194,3 +194,94 @@
 //     background-position: left 0.7em top 50%, 0 0;
 //     padding: 0.6em 0.8em 0.5em 1.4em;
 // }
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+
+    &__container {
+        width: 33%;
+        position: relative;
+    }
+
+    &__button {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: left;
+
+        background-color: $dark-grey;
+        border: 1px solid $white;
+        padding: 8px 25px 8px 10px;
+
+        font-family: $font-family;
+        font-size: $text-size;
+        font-weight: 400;
+        line-height: 25px;
+        color: $white;
+
+        cursor: pointer;
+
+        &:focus,
+        &--active {
+            box-shadow: 0 4px 8px rgba(26, 26, 26, 0.5);
+        }
+
+        &:after {
+            content: "";
+
+            position: absolute;
+            top: 45%;
+            right: 12px;
+            transform: translateY(-50%) rotate(135deg);
+
+            width: 11px;
+            height: 11px;
+            border-top: 2px solid $white;
+            border-right: 2px solid $white;
+
+            pointer-events: none;
+        }
+
+        &:hover {
+            background: $grey;
+        }
+    }
+
+    &__list {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 52px;
+        background: $dark-grey;
+        box-shadow: 0 4px 8px rgba(26, 26, 26, 0.5);
+        overflow: hidden;
+        width: 100%;
+        z-index: 1;
+
+        &--item {
+            border: 1px solid $white;
+            padding: 10px 25px 10px 10px;
+            cursor: pointer;
+
+            &:hover {
+                background: $grey;
+            }
+        }
+
+        &--visible {
+            display: block;
+        }
+
+        & li:not(:last-child) {
+            border-bottom: 0px;
+        }
+    }
+
+    &__input {
+        &--hidden {
+            display: none;
+        }
+    }
+}

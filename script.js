@@ -119,3 +119,45 @@ buttonAllCity.addEventListener('click', function (e) {
     buttonAllCity.classList.toggle('button__footer--rotate');
 });
 
+
+
+// style dropdown list (select, options)
+// let listVisible = document.querySelector('.dropdown__list').classList.toggle('dropdown__list--visible');
+
+// let dropButton = document.querySelectorAll('.dropdown__button').forEach(function (e) {
+//     listVisible.forEach(function (e) {
+
+//     })
+// });
+
+let dropButton = document.querySelector('.dropdown__button');
+let dropList = document.querySelector('.dropdown__list');
+let allDropItems = document.querySelectorAll('.dropdown__list--item');
+let inputDropdown = document.querySelector('.dropdown__input--hidden');
+
+
+// click button : open/close dropdown list
+dropButton.addEventListener('click', function (e) {
+    dropList.classList.toggle('dropdown__list--visible');
+    this.classList.add('dropdown__button--active');
+});
+
+// list : choose item 
+allDropItems.forEach(function (listItem) {
+    listItem.addEventListener('click', function (e) {
+        e.stopPropagation(); // click not count by list items 
+        dropButton.innerText = this.innerText;
+        dropButton.focus();
+        inputDropdown.value = this.dataset.value;
+        dropList.classList.remove('dropdown__list--visible');
+    });
+});
+
+// click outside the droplist
+document.addEventListener('click', function (e) {
+    if (e.target !== dropButton) {
+        dropButton.classList.remove('dropdown__button--active');
+        dropList.classList.remove('dropdown__list--visible');
+    };
+});
+
