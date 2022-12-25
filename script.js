@@ -188,10 +188,10 @@ allButton.forEach(function (dropWrapper) {
 //     this.classList.add('dropdown__button--active');
 // });
 
-// // list : choose item 
+// // list : choose item
 // allDropItems.forEach(function (listItem) {
 //     listItem.addEventListener('click', function (e) {
-//         e.stopPropagation(); // click not count by list items 
+//         e.stopPropagation(); // click not count by list items
 //         dropButton.innerText = this.innerText;
 //         dropButton.focus();
 //         inputDropdown.value = this.dataset.value;
@@ -208,11 +208,11 @@ allButton.forEach(function (dropWrapper) {
 // });
 
 
-// click tab or esc
-document.addEventListener('keydown', function (e) {
-    if (e.key === 'Tab' || e.key === 'Escape') {
-        dropButton.classList.remove('dropdown__button--active');
-        dropList.classList.remove('dropdown__list--visible');
-    }
-});
+// // click tab or esc
+// document.addEventListener('keydown', function (e) {
+//     if (e.key === 'Tab' || e.key === 'Escape') {
+//         dropButton.classList.remove('dropdown__button--active');
+//         dropList.classList.remove('dropdown__list--visible');
+//     }
+// });
 

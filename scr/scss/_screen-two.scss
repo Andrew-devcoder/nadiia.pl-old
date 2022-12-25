@@ -18,6 +18,7 @@
     background: #ffffff;
 }
 .card {
+    position: relative;
     width: 356px;
     height: 300px;
     padding-top: 18px;
@@ -54,5 +55,10 @@
         &:not(first-child) {
             gap: 4px;
         }
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 0;
     }
 }
