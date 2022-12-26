@@ -695,6 +695,10 @@ footer {
 
 .screen-five {
   padding: 80px 0 0;
+  box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+
 }
 .screen-five__body {
   display: flex;
