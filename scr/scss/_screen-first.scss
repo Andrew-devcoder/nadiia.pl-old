@@ -11,6 +11,9 @@
     @include rowBetween;
     align-items: center;
     margin-bottom: 57px;
+box-sizing: border-box;
+width: 100%;
+overflow: hidden;
 
     min-width: 0;
 
