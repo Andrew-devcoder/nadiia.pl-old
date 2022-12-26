@@ -9,6 +9,10 @@
     background-color: $white;
     z-index: 99;
 
+    @include mob {
+        position: relative;
+    }
+
     &__body {
         @include flexCenter;
         flex-direction: row;
@@ -30,6 +34,7 @@
 
     &__section {
         display: flex;
+
         li {
             position: relative;
         }
@@ -74,8 +79,23 @@
         }
     }
 
-    & > img {
+    &__logo {
         padding-right: 10px;
+
+        @include mob {
+            display: none;
+        }
+
+        &--mob {
+            display: none;
+
+            @include mob {
+                display: block;
+                position: absolute;
+                bottom: 14px;
+                left: 24px;
+            }
+        }
     }
 }
 
@@ -130,6 +150,10 @@
 .exit {
     display: flex;
     gap: 32px;
+
+    @include mob {
+        display: none;
+    }
 }
 
 .menu__section > li:hover .sub-menu__section {

@@ -12,16 +12,16 @@ var first = new Swiper('.swiper-one', {
     slidesPerView: 1,
     watchOverflow: true,
     spaceBetween: 1000,
-    autoplay: {
-        delay: 1000,
-        stopOnLastSlide: true,
-        disableOnInteraction: false,
-    },
-    speed: 4000,
+    // autoplay: {
+    //     delay: 1000,
+    //     stopOnLastSlide: true,
+    //     disableOnInteraction: false,
+    // },
+    speed: 2000,
     freeMode: true, // можно скроллить как ленту без фиксации на блоке 
-    loop: true, // бесконечное прокручивание
+    // loop: true, // бесконечное прокручивание
     // initialSlide: 1, //дефолт второй слайд ( по индексу первый )
-    // centeredSlides: true,
+    centeredSlides: true,
     // slideToClickedSlide: true,
 
     // direction: 'vertical',

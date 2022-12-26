@@ -6,6 +6,10 @@
     &__items {
         @include rowBetween;
     }
+
+    @include breakpoint-mobile($mobile) {
+        display: none;
+    }
 }
 .icons {
     display: flex;

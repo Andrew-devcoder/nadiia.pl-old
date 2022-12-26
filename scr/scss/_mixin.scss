@@ -41,26 +41,6 @@
     flex: auto;
 }
 // *Breakpoints
-// @mixin lg {
-//     @media screen and (max-width: $screen-lg) {
-//         @content;
-//     }
-// }
-// @mixin md {
-//     @media screen and (max-width: $screen-md) {
-//         @content;
-//     }
-// }
-// @mixin sm {
-//     @media screen and (max-width: $screen-sm) {
-//         @content;
-//     }
-// }
-// @mixin mobile {
-//     @media screen and (max-width: $screen-mobile) {
-//         @content;
-//     }
-// }
 @mixin screen-lg {
     max-width: $lg;
 }
@@ -76,6 +56,18 @@
 
 @mixin breakpoint-md($md) {
     @media (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin breakpoint-mobile($mobile) {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin mob {
+    @include breakpoint-mobile($mobile) {
         @content;
     }
 }
