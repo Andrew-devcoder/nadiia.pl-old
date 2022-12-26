@@ -123,6 +123,7 @@ h2 {
 
 footer {
   color: #fdfdfd;
+  
 }
 
 .button {
@@ -732,6 +733,10 @@ footer {
 .footer {
   padding: 80px 0;
   background: #404040;
+  box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+
 }
 .footer__container {
   display: flex;
