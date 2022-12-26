@@ -695,9 +695,7 @@ footer {
 
 .screen-five {
   padding: 80px 0 0;
-  box-sizing: border-box;
-width: 100%;
-overflow: hidden;
+  
 
 }
 .screen-five__body {
@@ -717,6 +715,10 @@ overflow: hidden;
   flex-direction: row;
   justify-content: space-between;
   padding: 50px 0;
+  
+  box-sizing: border-box;
+width: 100%;
+overflow: hidden;
 }
 .screen-five__logo {
   padding-bottom: 12px;
