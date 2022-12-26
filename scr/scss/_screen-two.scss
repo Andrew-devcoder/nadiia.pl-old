@@ -45,6 +45,9 @@
     }
 
     &__body {
+        position: absolute;
+        left: 41px;
+        top: 75px;
         display: flex;
         flex-direction: column;
 
@@ -59,6 +62,7 @@
 
     &__button {
         position: absolute;
-        bottom: 0;
+        bottom: 24px;
+        right: 39px;
     }
 }

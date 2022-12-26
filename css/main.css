@@ -140,15 +140,10 @@ footer {
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding-right: 50px;
   font-weight: 700;
   font-size: 18px;
   background: rgba(0, 0, 0, 0);
   color: #404040;
-}
-.button__card--margin-left {
-  margin: 0;
-  margin-left: 41px;
 }
 .button__slide {
   padding: 0;
@@ -443,6 +438,9 @@ footer {
   margin: 20px auto 24px;
 }
 .card__body {
+  position: absolute;
+  left: 41px;
+  top: 75px;
   display: flex;
   flex-direction: column;
 }
@@ -454,7 +452,8 @@ footer {
 }
 .card__button {
   position: absolute;
-  bottom: 0;
+  bottom: 24px;
+  right: 39px;
 }
 
 .sliders {

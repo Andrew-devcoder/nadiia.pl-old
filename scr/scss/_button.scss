@@ -28,16 +28,15 @@
         display: flex;
         align-items: center;
         margin-left: auto;
-        padding-right: 50px;
         font-weight: 700;
         font-size: $text-size;
         background: rgba(0, 0, 0, 0);
         color: $dark-grey;
 
-        &--margin-left {
-            margin: 0;
-            margin-left: 41px;
-        }
+        // &--margin-left {
+        //     margin: 0;
+        //     margin-left: 41px;
+        // }
     }
 
     &__slide {
