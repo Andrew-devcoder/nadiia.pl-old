@@ -962,3 +962,8 @@ footer {
 .dropdown__input--hidden {
   display: none;
 }
+.swiper-one {
+box-sizing: border-box;
+width: 100%;
+overflow: hidden;
+}
