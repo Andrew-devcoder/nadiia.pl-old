@@ -8,6 +8,7 @@
     text-decoration: underline;
     color: $green;
 }
+
 .cards {
     display: flex;
     flex-direction: row;
@@ -16,7 +17,16 @@
     row-gap: 71.9px;
     padding: 80px 0 80px;
     background: #ffffff;
+
+    @include breakpoint-lg($lg) {
+        justify-content: center;
+        gap: 80px;
+    }
+    @include breakpoint-md($md) {
+        padding: 60px 0;
+    }
 }
+
 .card {
     position: relative;
     width: 356px;
@@ -25,6 +35,10 @@
     border-radius: 23px;
     box-shadow: -10px 14px 18px rgba(194, 194, 194, 0.25);
     background: #ffffff;
+
+    @include breakpoint-md($md) {
+        width: 320px;
+    }
 
     &__title {
         display: flex;

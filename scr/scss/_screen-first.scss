@@ -2,6 +2,10 @@
     position: relative;
     padding: 36px 0 74px;
     background: $light-grey;
+
+    @include breakpoint-md($md) {
+        padding: 18px 0 0;
+    }
 }
 .carousel {
     @include rowBetween;
@@ -9,6 +13,10 @@
     margin-bottom: 57px;
 
     min-width: 0;
+
+    @include breakpoint-md($md) {
+        // margin-bottom: 20px;
+    }
 }
 
 .text {
@@ -25,6 +33,10 @@
         font-weight: 700;
         line-height: 100%;
         color: $grey;
+
+        @include breakpoint-md($md) {
+            top: -50px;
+        }
     }
 
     &__subtitle {
@@ -46,6 +58,10 @@
 }
 .first-img {
     max-width: 100%;
+
+    @include breakpoint-md($md) {
+        max-width: 50%;
+    }
 }
 
 .scroll-carousel {
@@ -61,6 +77,10 @@
     bottom: 80px;
     max-width: 60%;
     width: 100%;
+
+    @include breakpoint-md($md) {
+        bottom: 40px;
+    }
 }
 
 .swiper-scrollbar-drag {

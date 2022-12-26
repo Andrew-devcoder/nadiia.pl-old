@@ -13,7 +13,20 @@ h2 {
 }
 .container {
     @include containerCenter;
+
+    @include breakpoint-lg($lg) {
+        @include screen-md;
+    }
+
+    @include breakpoint-md($md) {
+        @include screen-md;
+    }
+
+    // @include breakpoint-max($sm) {
+    //     max-width: $screen-mobile;
+    // }
 }
+
 footer {
     color: $white;
 }

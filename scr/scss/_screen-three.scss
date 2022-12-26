@@ -4,6 +4,10 @@
     padding: 80px 0;
     background: $light-grey;
 
+    @include breakpoint-md($md) {
+        padding: 40px 0;
+    }
+
     &__title {
         font-weight: 700;
         line-height: 82px;
@@ -12,20 +16,9 @@
         color: $grey;
     }
 
-    // &__row {
-    //     padding: 59px 0 30px;
-    //     @include rowBetween;
-    //     gap: 26px;
-    // }
-
     &__arrows {
         position: absolute;
         top: 551px;
-        // left: auto;
-        // display: flex;
-        // justify-content: flex-end;
-        // gap: 23px;
-        // margin: 0 20px 39px;
         margin: auto;
         margin-left: 920px;
         cursor: pointer;
@@ -33,6 +26,15 @@
 
         &--rotate {
             transform: rotate(180deg);
+        }
+
+        @include breakpoint-lg($lg) {
+            margin-left: 778px;
+        }
+
+        @include breakpoint-md($md) {
+            top: 650px;
+            margin-left: -11px;
         }
     }
 
@@ -103,6 +105,15 @@
 
 .swiper-wrapper {
     padding: 59px 0 30px;
+
+    @include breakpoint-lg($lg) {
+        display: flex;
+        gap: 35px;
+    }
+
+    @include breakpoint-md($md) {
+        gap: 96px;
+    }
 }
 
 .swiper-two {

@@ -40,3 +40,42 @@
     flex-direction: row-reverse;
     flex: auto;
 }
+// *Breakpoints
+// @mixin lg {
+//     @media screen and (max-width: $screen-lg) {
+//         @content;
+//     }
+// }
+// @mixin md {
+//     @media screen and (max-width: $screen-md) {
+//         @content;
+//     }
+// }
+// @mixin sm {
+//     @media screen and (max-width: $screen-sm) {
+//         @content;
+//     }
+// }
+// @mixin mobile {
+//     @media screen and (max-width: $screen-mobile) {
+//         @content;
+//     }
+// }
+@mixin screen-lg {
+    max-width: $lg;
+}
+@mixin screen-md {
+    max-width: $md;
+}
+
+@mixin breakpoint-lg($lg) {
+    @media (max-width: $lg) {
+        @content;
+    }
+}
+
+@mixin breakpoint-md($md) {
+    @media (max-width: $md) {
+        @content;
+    }
+}
