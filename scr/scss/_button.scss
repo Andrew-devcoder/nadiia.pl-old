@@ -6,6 +6,10 @@
     line-height: 25px;
     color: $dark-grey;
 
+    @include mob {
+        font-size: $text-size-mobile;
+    }
+
     &__fill {
         display: inline-block;
         color: $white;
@@ -33,6 +37,10 @@
         background: rgba(0, 0, 0, 0);
         color: $dark-grey;
 
+        @include mob {
+            font-size: $text-size-mobile;
+        }
+
         // &--margin-left {
         //     margin: 0;
         //     margin-left: 41px;
@@ -56,6 +64,10 @@
         line-height: 25px;
         color: $white;
         background: rgba(0, 0, 0, 0);
+
+        @include mob {
+            font-size: $text-size-mobile;
+        }
 
         &--rotate {
             img {

@@ -29,6 +29,10 @@
     font-size: $text-size;
     color: $white;
 
+    @include mob {
+        font-size: $text-size-mobile;
+    }
+
     img {
         margin-right: 90px;
     }

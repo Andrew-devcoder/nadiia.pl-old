@@ -30,3 +30,36 @@ header img ( search ) добавил margin , нужно найти лучший
 ---
 
 в карточках news ограничен контент максимальной высотой и максимально 5 строчек , в конце три точки
+
+---
+
+<!-- style for select and option -->
+
+.select-css {
+margin: 0;
+padding: 5px 8px
+font-family: $font-family;
+font-size: $text-size;
+font-weight: 400;
+line-height: 25px;
+color: $light-grey;
+border: 1px solid $grey;
+background-color: $dark-grey;
+
+.select-css:hover {
+border-color: $white;
+cursor: pointer;
+background-color: $grey;
+}
+.select-css:focus {
+border-color: $white;
+color: $light-grey;
+outline: none;
+}
+.select-css option:hover {
+cursor: pointer;
+}
+
+---
+
+сделал ошибку с кнопками нужно исправить : кажду кнопку только стилизовать но не позиционировать , а уже для каждого блока создавать див с кнопкой и позиционировать

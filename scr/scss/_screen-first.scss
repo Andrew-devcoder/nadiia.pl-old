@@ -3,6 +3,10 @@
     padding: 36px 0 74px;
     background: $light-grey;
 
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+
     @include breakpoint-md($md) {
         padding: 18px 0 0;
     }
@@ -12,11 +16,10 @@
     align-items: center;
     margin-bottom: 57px;
 
-
     min-width: 0;
 
-    @include breakpoint-md($md) {
-        // margin-bottom: 20px;
+    @include mob {
+        flex-direction: column;
     }
 }
 
@@ -38,6 +41,12 @@
         @include breakpoint-md($md) {
             top: -50px;
         }
+
+        @include mob {
+            position: relative;
+            white-space: normal;
+            width: 400px;
+        }
     }
 
     &__subtitle {
@@ -46,6 +55,11 @@
         font-size: $title-size;
         line-height: 33px;
         color: $dark-grey;
+
+        @include mob {
+            font-size: $title-size-mobile;
+            margin: 0;
+        }
     }
 
     &__content {
@@ -62,6 +76,10 @@
 
     @include breakpoint-md($md) {
         max-width: 50%;
+    }
+
+    @include mob {
+        max-width: 100%;
     }
 }
 
@@ -89,8 +107,8 @@
     cursor: pointer;
 }
 
-.swiper-one {
-box-sizing: border-box;
-width: 100%;
-overflow: hidden;
-}
+// .swiper-one {
+//     box-sizing: border-box;
+//     width: 100%;
+//     overflow: hidden;
+// }

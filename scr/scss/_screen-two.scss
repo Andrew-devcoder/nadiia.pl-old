@@ -22,8 +22,13 @@
         justify-content: center;
         gap: 80px;
     }
+
     @include breakpoint-md($md) {
         padding: 60px 0;
+    }
+
+    @include mob {
+        gap: 20px;
     }
 }
 
@@ -40,6 +45,10 @@
         width: 320px;
     }
 
+    @include mob {
+        width: 356px;
+    }
+
     &__title {
         display: flex;
         align-items: center;
@@ -51,6 +60,10 @@
         font-size: $title-size;
         color: $dark-grey;
         text-align: center;
+
+        @include mob {
+            font-size: $title-size-mobile;
+        }
     }
 
     &__img {

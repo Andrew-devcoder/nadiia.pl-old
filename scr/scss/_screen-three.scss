@@ -3,6 +3,9 @@
 .sliders {
     padding: 80px 0;
     background: $light-grey;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
 
     @include breakpoint-md($md) {
         padding: 40px 0;
@@ -14,6 +17,10 @@
         font-size: $h1-size;
         text-align: center;
         color: $grey;
+
+        @include mob {
+            font-size: $h1-size-mobile;
+        }
     }
 
     &__arrows {

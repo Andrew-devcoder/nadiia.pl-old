@@ -4,12 +4,24 @@ body {
 }
 h1 {
     font-size: $h1-size;
+
+    @include mob {
+        font-size: $h1-size-mobile;
+    }
 }
 h2 {
     font-size: $h2-size;
+
+    @include mob {
+        font-size: $h2-size-mobile;
+    }
 }
 h2 {
     font-size: $h3-size;
+
+    @include mob {
+        font-size: $h3-size-mobile;
+    }
 }
 .container {
     @include containerCenter;
@@ -21,10 +33,6 @@ h2 {
     @include breakpoint-md($md) {
         @include screen-md;
     }
-
-    // @include breakpoint-max($sm) {
-    //     max-width: $screen-mobile;
-    // }
 }
 
 footer {
